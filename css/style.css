@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-light: hsl(189, 41%, 97%);
+  --clr-light-second: hsl(184, 41%, 87%);
+  --clr-light-third: hsl(189, 41%, 84%);
+  --clr-normal: hsl(172, 67%, 45%);
+  --clr-dark: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --clr-white: white;
+}
+
+body {
+  font-family: "Space Mono", monospace;
+  font-size: 1.2rem;
+}
+
+/* Main Styles */
+
+.background {
+  background-color: var(--clr-light-second);
+  height: 100vh;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 5rem;
+}
+
+.logo > img {
+  margin: 2.5rem 0;
+}
+
+.main-container {
+  background-color: var(--clr-white);
+  border-radius: 35px 35px 0 0;
+  padding: 2rem;
+}
+
+label {
+  display: block;
+  color: var(--dark-grayish-cyan);
+  margin-top: 1rem;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  background-color: var(--clr-light);
+  color: var(--clr-dark);
+  font-family: "Space Mono", monospace;
+  -moz-appearance: textfield;
+  box-sizing: border-box;
+}
+
+.percents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.percents > div {
+  background-color: var(--clr-dark);
+  color: var(--clr-white);
+  padding: 0.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+
+.percents > div:hover {
+  background-color: var(--clr-normal);
+}
