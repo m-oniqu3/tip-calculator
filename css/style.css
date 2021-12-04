@@ -102,7 +102,7 @@ input[type="number"] {
 .tips {
   background-color: var(--clr-dark);
   border-radius: 15px;
-  padding: 2rem;
+  padding: 2rem 1.2rem;
 }
 
 .amount,
@@ -110,7 +110,7 @@ input[type="number"] {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 1.2rem;
+  margin: 1.2rem 0;
 }
 
 #amt {
