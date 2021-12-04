@@ -18,7 +18,7 @@
 
 body {
   font-family: "Space Mono", monospace;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
 }
 
 /* Main Styles */
@@ -51,21 +51,25 @@ label {
 
 input[type="number"] {
   width: 100%;
-  padding: 12px 20px;
+  padding: 10px 20px;
   margin: 8px 0;
-  border: none;
   background-color: var(--clr-light);
   color: var(--clr-dark);
   font-family: "Space Mono", monospace;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: end;
   -moz-appearance: textfield;
   box-sizing: border-box;
+  border: none;
+  border-radius: 5px;
 }
 
 .percents {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
-  margin: 1rem 0;
+  margin: 2rem 0;
 }
 
 .percents > div {
@@ -80,4 +84,61 @@ input[type="number"] {
 
 .percents > div:hover {
   background-color: var(--clr-normal);
+}
+
+.percents input[type="number"] {
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.percents input[type="number"]::placeholder {
+  color: var(--clr-dark);
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+/* Tips Results*/
+
+.tips {
+  background-color: var(--clr-dark);
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.amount,
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1.2rem;
+}
+
+#amt {
+  font-size: 1rem;
+  color: var(--clr-white);
+}
+
+#person {
+  font-size: 0.875rem;
+  color: var(--clr-normal);
+}
+
+.amount-total,
+.total-amount {
+  font-size: 1.675rem;
+  color: var(--clr-normal);
+  font-weight: 700;
+}
+
+.btn {
+  width: 100%;
+  padding: 0.8rem 0;
+  margin-top: 2rem;
+  background-color: var(--clr-normal);
+  color: var(--clr-dark);
+  font-size: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
 }
