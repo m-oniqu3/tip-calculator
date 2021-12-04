@@ -97,7 +97,7 @@ input[type="number"]:focus {
   padding: 0.5rem;
 }
 
-.percents input[type="number"]::placeholder {
+::placeholder {
   color: var(--clr-dark);
   font-size: 1.3rem;
   font-weight: 700;
