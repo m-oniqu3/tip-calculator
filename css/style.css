@@ -149,3 +149,8 @@ input[type="number"]:focus {
   border: none;
   border-radius: 5px;
 }
+
+.btn:hover,
+.btn:focus {
+  background-color: var(--clr-light-second);
+}
