@@ -97,9 +97,9 @@ input[type="number"]:focus {
   padding: 0.5rem;
 }
 
-::placeholder {
+input[type="number"]::placeholder {
   color: var(--clr-dark);
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
 }
 
@@ -153,4 +153,27 @@ input[type="number"]:focus {
 .btn:hover,
 .btn:focus {
   background-color: var(--clr-light-second);
+}
+
+/* Media Queries */
+
+@media (min-width: 768px) {
+  .main-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    max-width: 80%;
+    margin: 0 auto;
+    border-radius: 35px;
+  }
+
+  input[type="number"]::placeholder {
+    font-size: 0.765rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .main-container {
+    max-width: 60%;
+  }
 }
